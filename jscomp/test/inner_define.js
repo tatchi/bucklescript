@@ -5,7 +5,7 @@ function add(x, y) {
   return x + y | 0;
 }
 
-var N = {
+var N = /* module */{
   add: add
 };
 
@@ -21,7 +21,7 @@ function f3(param, param$1, param$2) {
   return /* () */0;
 }
 
-var N0 = {
+var N0 = /* module */{
   f1: f1,
   f2: f2,
   f3: f3
@@ -35,7 +35,7 @@ function f3$1(param, param$1, param$2) {
   return /* () */0;
 }
 
-var N1 = {
+var N1 = /* module */{
   f2: f2$1,
   f3: f3$1
 };

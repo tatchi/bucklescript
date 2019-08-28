@@ -1191,7 +1191,7 @@ function of_list(l) {
   }
 }
 
-var String_set = {
+var String_set = /* module */{
   empty: /* Empty */0,
   is_empty: is_empty,
   mem: mem,

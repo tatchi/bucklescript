@@ -3,9 +3,9 @@
 var Curry = require("../../lib/js/curry.js");
 var Caml_splice_call = require("../../lib/js/caml_splice_call.js");
 
-var Curry$1 = { };
+var Curry$1 = /* module */{ };
 
-var Block = { };
+var Block = /* module */{ };
 
 var xbs = Array.prototype.map.call(/* array */[
       1,

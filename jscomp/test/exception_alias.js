@@ -13,7 +13,7 @@ var b = List.length(/* :: */[
       ]
     ]);
 
-var List$1 = {
+var List$1 = /* module */{
   hd: List.hd,
   tl: List.tl,
   nth: List.nth,

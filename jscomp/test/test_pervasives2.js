@@ -4,7 +4,7 @@ var List = require("../../lib/js/list.js");
 var Stack = require("../../lib/js/stack.js");
 var Pervasives = require("../../lib/js/pervasives.js");
 
-var List$1 = {
+var List$1 = /* module */{
   length: List.length,
   hd: List.hd,
   tl: List.tl,
@@ -127,7 +127,7 @@ var List$1 = {
   do_at_exit: Pervasives.do_at_exit
 };
 
-var U = {
+var U = /* module */{
   Empty: Stack.Empty,
   create: Stack.create,
   push: Stack.push,

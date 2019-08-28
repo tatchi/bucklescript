@@ -3,7 +3,7 @@
 var List = require("../../lib/js/list.js");
 var Pervasives = require("../../lib/js/pervasives.js");
 
-var Pervasives$1 = {
+var Pervasives$1 = /* module */{
   length: List.length,
   hd: List.hd,
   tl: List.tl,

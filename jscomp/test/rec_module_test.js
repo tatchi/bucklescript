@@ -39,7 +39,7 @@ function even(n) {
 Caml_module.update_mod([[[
           0,
           "even"
-        ]]], A, {
+        ]]], A, /* module */{
       even: even
     });
 
@@ -56,7 +56,7 @@ function odd(n) {
 Caml_module.update_mod([[[
           0,
           "odd"
-        ]]], B, {
+        ]]], B, /* module */{
       odd: odd
     });
 
@@ -113,7 +113,7 @@ Caml_module.update_mod([[
           0,
           "x"
         ]
-      ]], AA, {
+      ]], AA, /* module */{
       even: even$1,
       x: x
     });
@@ -141,7 +141,7 @@ Caml_module.update_mod([[
           0,
           "y"
         ]
-      ]], BB, {
+      ]], BB, /* module */{
       odd: odd$1,
       y: y
     });
@@ -900,7 +900,7 @@ function of_list(l) {
   }
 }
 
-var ASet = {
+var ASet = /* module */{
   empty: /* Empty */0,
   is_empty: is_empty,
   mem: mem,
@@ -946,7 +946,7 @@ function compare$1(t1, t2) {
 Caml_module.update_mod([[[
           0,
           "compare"
-        ]]], AAA, {
+        ]]], AAA, /* module */{
       compare: compare$1
     });
 

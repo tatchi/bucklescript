@@ -8,7 +8,7 @@ function u(v) {
   return v;
 }
 
-var s = {
+var s = /* module */{
   make: $$String.make,
   init: $$String.init,
   copy: $$String.copy,
@@ -36,7 +36,7 @@ var s = {
   compare: $$String.compare
 };
 
-var N = {
+var N = /* module */{
   s: s
 };
 

@@ -6,10 +6,10 @@ function Make(X) {
   var f = function (param) {
     return /* () */0;
   };
-  var M = {
+  var M = /* module */{
     f: f
   };
-  return {
+  return /* module */{
           M: M
         };
 }
@@ -30,7 +30,7 @@ function f(param) {
   return /* () */0;
 }
 
-var M = {
+var M = /* module */{
   f: f
 };
 
@@ -40,7 +40,7 @@ Caml_module.update_mod([[[
                 "f"
               ]]],
           "M"
-        ]]], B, {
+        ]]], B, /* module */{
       M: M
     });
 

@@ -26,7 +26,7 @@ function log(x) {
   return /* () */0;
 }
 
-var N = {
+var N = /* module */{
   log2: log
 };
 

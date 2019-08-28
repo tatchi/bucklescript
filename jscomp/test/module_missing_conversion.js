@@ -9,7 +9,7 @@ function f(x) {
   return x;
 }
 
-var XX = {
+var XX = /* module */{
   init: $$Array.init,
   make_matrix: $$Array.make_matrix,
   create_matrix: $$Array.create_matrix,

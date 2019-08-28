@@ -9,7 +9,7 @@ function M(S) {
   var f = function (x) {
     return x;
   };
-  return {
+  return /* module */{
           f: f
         };
 }

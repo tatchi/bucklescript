@@ -751,7 +751,7 @@ function of_list(l) {
   }
 }
 
-var $$Set = {
+var $$Set = /* module */{
   empty: /* Empty */0,
   is_empty: is_empty,
   mem: mem,
@@ -780,7 +780,7 @@ var $$Set = {
   of_list: of_list
 };
 
-var M = {
+var M = /* module */{
   x: 1,
   Set: $$Set
 };

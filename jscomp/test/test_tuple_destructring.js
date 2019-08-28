@@ -1,7 +1,7 @@
 'use strict';
 
 
-var N = {
+var N = /* module */{
   b: 3
 };
 

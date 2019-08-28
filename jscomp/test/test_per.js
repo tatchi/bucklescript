@@ -59,35 +59,35 @@ function lnot(x) {
 
 var min_int = -2147483648;
 
-var infinity = Caml_int64.float_of_bits(/* int64 */[
-      /* hi */2146435072,
-      /* lo */0
-    ]);
+var infinity = Caml_int64.float_of_bits(/* int64 */{
+      hi: 2146435072,
+      lo: 0
+    });
 
-var neg_infinity = Caml_int64.float_of_bits(/* int64 */[
-      /* hi */-1048576,
-      /* lo */0
-    ]);
+var neg_infinity = Caml_int64.float_of_bits(/* int64 */{
+      hi: -1048576,
+      lo: 0
+    });
 
-var nan = Caml_int64.float_of_bits(/* int64 */[
-      /* hi */2146435072,
-      /* lo */1
-    ]);
+var nan = Caml_int64.float_of_bits(/* int64 */{
+      hi: 2146435072,
+      lo: 1
+    });
 
-var max_float = Caml_int64.float_of_bits(/* int64 */[
-      /* hi */2146435071,
-      /* lo */4294967295
-    ]);
+var max_float = Caml_int64.float_of_bits(/* int64 */{
+      hi: 2146435071,
+      lo: 4294967295
+    });
 
-var min_float = Caml_int64.float_of_bits(/* int64 */[
-      /* hi */1048576,
-      /* lo */0
-    ]);
+var min_float = Caml_int64.float_of_bits(/* int64 */{
+      hi: 1048576,
+      lo: 0
+    });
 
-var epsilon_float = Caml_int64.float_of_bits(/* int64 */[
-      /* hi */1018167296,
-      /* lo */0
-    ]);
+var epsilon_float = Caml_int64.float_of_bits(/* int64 */{
+      hi: 1018167296,
+      lo: 0
+    });
 
 function $caret(s1, s2) {
   var l1 = s1.length;
@@ -495,7 +495,7 @@ function read_float(param) {
   return Caml_format.caml_float_of_string((Caml_io.caml_ml_flush(stdout), input_line(stdin)));
 }
 
-var LargeFile = { };
+var LargeFile = /* module */{ };
 
 function string_of_format(param) {
   return param[1];

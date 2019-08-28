@@ -516,7 +516,7 @@ var of_unit = /* `List */[
   /* [] */0
 ];
 
-var Traverse = {
+var Traverse = /* module */{
   map_opt: map_opt,
   list_any: list_any,
   list_all: list_all,

@@ -68,7 +68,7 @@ Caml_module.update_mod([[
         ]
       ]], Int32, Int32);
 
-var Xx = {
+var Xx = /* module */{
   f: (function (prim, prim$1) {
       return Caml_external_polyfill.resolve("hfiehi")(prim, prim$1);
     })
@@ -115,7 +115,7 @@ var a = Caml_obj.caml_lazy_make((function (param) {
 Caml_module.update_mod([[[
           1,
           "a"
-        ]]], Inta, {
+        ]]], Inta, /* module */{
       a: a
     });
 
@@ -126,7 +126,7 @@ var a$1 = Caml_obj.caml_lazy_make((function (param) {
 Caml_module.update_mod([[[
           1,
           "a"
-        ]]], Intb, {
+        ]]], Intb, /* module */{
       a: a$1
     });
 
@@ -170,18 +170,18 @@ var a$2 = Caml_obj.caml_lazy_make((function (param) {
 Caml_module.update_mod([[[
           1,
           "a"
-        ]]], Inta$1, {
+        ]]], Inta$1, /* module */{
       a: a$2
     });
 
 Caml_module.update_mod([[[
           1,
           "a"
-        ]]], Intb$1, {
+        ]]], Intb$1, /* module */{
       a: 2
     });
 
-var A = {
+var A = /* module */{
   Inta: Inta$1,
   Intb: Intb$1
 };

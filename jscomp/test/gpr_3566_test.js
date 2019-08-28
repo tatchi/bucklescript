@@ -16,9 +16,9 @@ function eq_A(x, y) {
 function Test($star) {
   console.log("no inline");
   var u = /* A */Block.__(0, [3]);
-  var Block$1 = { };
+  var Block$1 = /* module */{ };
   var b = eq_A(/* A */Block.__(0, [3]), u);
-  return {
+  return /* module */{
           u: u,
           Block: Block$1,
           y: 32,
@@ -28,9 +28,9 @@ function Test($star) {
 
 function Test2($star) {
   console.log("no inline");
-  var Block$1 = { };
+  var Block$1 = /* module */{ };
   var b = eq_A(/* A */Block.__(0, [3]), /* A */Block.__(0, [3]));
-  return {
+  return /* module */{
           Block: Block$1,
           y: 32,
           b: b
@@ -44,17 +44,17 @@ function f(i, y) {
 
 function Test3($star) {
   var f = Caml_obj.caml_equal;
-  var Caml_obj$1 = { };
-  return {
+  var Caml_obj$1 = /* module */{ };
+  return /* module */{
           f: f,
           Caml_obj: Caml_obj$1
         };
 }
 
 function Test4($star) {
-  var Caml_obj$1 = { };
+  var Caml_obj$1 = /* module */{ };
   var f = Caml_obj.caml_equal;
-  return {
+  return /* module */{
           Caml_obj: Caml_obj$1,
           f: f
         };
@@ -64,37 +64,37 @@ function Test5($star) {
   var f = function (x) {
     return Caml_option.some(x);
   };
-  var Caml_option$1 = { };
-  return {
+  var Caml_option$1 = /* module */{ };
+  return /* module */{
           f: f,
           Caml_option: Caml_option$1
         };
 }
 
 function Test6($star) {
-  var Caml_option$1 = { };
+  var Caml_option$1 = /* module */{ };
   var f = function (x) {
     return Caml_option.some(x);
   };
-  return {
+  return /* module */{
           Caml_option: Caml_option$1,
           f: f
         };
 }
 
 function Test7($star) {
-  var Caml_option = { };
-  return {
+  var Caml_option = /* module */{ };
+  return /* module */{
           Caml_option: Caml_option
         };
 }
 
 function Test8($star) {
-  var Curry$1 = { };
+  var Curry$1 = /* module */{ };
   var f = function (x) {
     return Curry._1(x, 1);
   };
-  return {
+  return /* module */{
           Curry: Curry$1,
           f: f
         };
@@ -104,16 +104,16 @@ function Test9($star) {
   var f = function (x) {
     return Curry._1(x, 1);
   };
-  var Curry$1 = { };
-  return {
+  var Curry$1 = /* module */{ };
+  return /* module */{
           f: f,
           Curry: Curry$1
         };
 }
 
 function Test10($star) {
-  var Curry = { };
-  return {
+  var Curry = /* module */{ };
+  return /* module */{
           Curry: Curry
         };
 }

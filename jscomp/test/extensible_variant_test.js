@@ -9,7 +9,7 @@ var Str = Caml_exceptions.create("Extensible_variant_test.Str");
 
 var Int = Caml_exceptions.create("Extensible_variant_test.N.Int");
 
-var N = {
+var N = /* module */{
   Int: Int
 };
 

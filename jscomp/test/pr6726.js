@@ -5,15 +5,15 @@ function get_uint8(str, off) {
   return 33;
 }
 
-var BigEndian = {
+var BigEndian = /* module */{
   get_uint8: get_uint8
 };
 
-var ExtUnixAll = {
+var ExtUnixAll = /* module */{
   BigEndian: BigEndian
 };
 
-var ExtUnix = {
+var ExtUnix = /* module */{
   All: 0
 };
 
@@ -23,7 +23,7 @@ function test_endian_string(x) {
 
 var v = test_endian_string(1);
 
-var Test = {
+var Test = /* module */{
   test_endian_string: test_endian_string,
   v: v
 };

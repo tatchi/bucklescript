@@ -8,7 +8,7 @@ var Mt_global = require("./mt_global.js");
 
 var count = /* record */[/* contents */0];
 
-var M = {
+var M = /* module */{
   Set: Offset.M.Set
 };
 

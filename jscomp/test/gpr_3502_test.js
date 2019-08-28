@@ -9,7 +9,7 @@ function name(param) {
   return 2;
 }
 
-var Language = {
+var Language = /* module */{
   toString: toString,
   name: name
 };

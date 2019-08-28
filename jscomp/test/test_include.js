@@ -6,18 +6,18 @@ var Test_order = require("./test_order.js");
 
 function Make(U) {
   var compare = U.compare;
-  return {
+  return /* module */{
           compare: compare,
           v: compare
         };
 }
 
-var X = {
+var X = /* module */{
   compare: $$String.compare,
   v: $$String.compare
 };
 
-var U = {
+var U = /* module */{
   compare: Test_order.compare,
   v: Test_order.compare
 };

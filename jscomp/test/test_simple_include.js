@@ -6,14 +6,14 @@ var v = /* record */[/* contents */32];
 
 v[0] = 0;
 
-var N = {
+var N = /* module */{
   a: 3,
   v: v
 };
 
 var v$1 = /* record */[/* contents */32];
 
-var NN = {
+var NN = /* module */{
   a: 3,
   v: v$1
 };

@@ -5,7 +5,7 @@ function f(x) {
   return x;
 }
 
-var U = {
+var U = /* module */{
   f: f
 };
 

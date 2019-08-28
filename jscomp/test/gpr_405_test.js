@@ -7,7 +7,7 @@ var Caml_builtin_exceptions = require("../../lib/js/caml_builtin_exceptions.js")
 
 function Make(funarg) {
   var $$let = funarg.V;
-  var H = Hashtbl.Make({
+  var H = Hashtbl.Make(/* module */{
         equal: $$let.equal,
         hash: $$let.hash
       });
@@ -110,7 +110,7 @@ function Make(funarg) {
     };
     return step2(first_node, /* [] */0);
   };
-  return {
+  return /* module */{
           min_cutset: min_cutset
         };
 }

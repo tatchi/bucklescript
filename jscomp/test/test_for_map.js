@@ -620,7 +620,7 @@ function bindings(s) {
   return bindings_aux(/* [] */0, s);
 }
 
-var IntMap = {
+var IntMap = /* module */{
   empty: /* Empty */0,
   is_empty: is_empty,
   mem: mem,

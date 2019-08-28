@@ -1,7 +1,7 @@
 'use strict';
 
 
-var React = {
+var React = /* module */{
   null: /* () */0
 };
 
@@ -9,7 +9,7 @@ function make(param, param$1) {
   return /* () */0;
 }
 
-var Foo = {
+var Foo = /* module */{
   make: make
 };
 

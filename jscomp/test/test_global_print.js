@@ -1,11 +1,11 @@
 'use strict';
 
 
-var List = {
+var List = /* module */{
   u: 3
 };
 
-var X = {
+var X = /* module */{
   List: List
 };
 

@@ -591,7 +591,7 @@ function Make(Ord) {
   var bindings = function (s) {
     return bindings_aux(/* [] */0, s);
   };
-  return {
+  return /* module */{
           height: height,
           create: create,
           singleton: singleton,
@@ -1245,7 +1245,7 @@ function bindings(s) {
   return bindings_aux(/* [] */0, s);
 }
 
-var IntMap = {
+var IntMap = /* module */{
   height: height,
   create: create,
   singleton: singleton,
@@ -1926,7 +1926,7 @@ function bindings$1(s) {
   return bindings_aux$1(/* [] */0, s);
 }
 
-var SMap = {
+var SMap = /* module */{
   height: height$1,
   create: create$1,
   singleton: singleton$1,

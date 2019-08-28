@@ -57,11 +57,14 @@ let field (field_info : Lam_compat.field_dbg_info) e i =
   | Fld_record_inline comment
   | Fld_record_extension comment
 #end
-  | Fld_record comment
-    -> E.array_index_by_int ~comment e i
+  | Fld_record comment when comment = "contents" ->
+    E.array_index_by_int ~comment e i
+  | Fld_record comment ->
+    E.dot e comment
   | Fld_module name
     -> E.module_access e name i
-let field_by_exp e i = 
+
+  let field_by_exp e i = 
   E.array_index e i 
 
 
@@ -76,7 +79,10 @@ let set_field (field_info : Lam_compat.set_field_dbg_info) e i e0 =
 #end    
     | Fld_record_set s -> Some (s)
   in (* see GPR#631*)
-  E.assign_by_int ?comment e i e0 
+  match comment with
+  | None
+  | Some "contents" -> E.assign_by_int ?comment e i e0 
+  | Some s -> E.assign (E.dot e s) e0
 
 let set_field_by_exp self index value = 
   E.assign_by_exp self index value

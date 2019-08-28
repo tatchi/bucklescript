@@ -5,9 +5,9 @@ function u(param) {
   return xx(3);
 }
 
-var Textarea = { };
+var Textarea = /* module */{ };
 
-var $$Int32Array = { };
+var $$Int32Array = /* module */{ };
 
 function v(param) {
   var u = new TextArea();

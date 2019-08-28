@@ -3,25 +3,21 @@
 var Format = require("../../lib/js/format.js");
 var Caml_exceptions = require("../../lib/js/caml_exceptions.js");
 
-var v = /* record */[
-  /* a */3,
-  /* b : record */[
-    /* xx */2,
-    /* yy */3
-  ]
-];
+var v = /* record */{
+  a: 3,
+  b: /* record */{
+    xx: 2,
+    yy: 3
+  }
+};
 
-var u_000 = /* a */2;
-
-var u_001 = /* b : record */[
-  /* xx */2,
-  /* yy */3
-];
-
-var u = /* record */[
-  u_000,
-  u_001
-];
+var u = /* record */{
+  a: 2,
+  b: /* record */{
+    xx: 2,
+    yy: 3
+  }
+};
 
 var A = Caml_exceptions.create("Record_debug_test.A");
 
@@ -38,7 +34,7 @@ var v1 = [
   2
 ];
 
-var N = {
+var N = /* module */{
   a: 0,
   b: 1
 };
@@ -47,7 +43,7 @@ function N0_f(prim) {
   return prim;
 }
 
-var N0 = {
+var N0 = /* module */{
   a: 0,
   b: 1,
   f: N0_f

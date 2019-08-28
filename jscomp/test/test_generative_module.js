@@ -2,12 +2,12 @@
 
 
 function M($star) {
-  return {
+  return /* module */{
           v: 3
         };
 }
 
-var V = {
+var V = /* module */{
   v: 3
 };
 

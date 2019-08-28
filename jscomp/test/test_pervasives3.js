@@ -3,7 +3,7 @@
 var List = require("../../lib/js/list.js");
 var Pervasives = require("../../lib/js/pervasives.js");
 
-var Pervasives$1 = {
+var Pervasives$1 = /* module */{
   invalid_arg: Pervasives.invalid_arg,
   failwith: Pervasives.failwith,
   Exit: Pervasives.Exit,

@@ -69,13 +69,13 @@ function fact(n) {
 Caml_module.update_mod([[[
           0,
           "fact"
-        ]]], M, {
+        ]]], M, /* module */{
       fact: fact
     });
 
 var fact$1 = M.fact;
 
-var Fact = {
+var Fact = /* module */{
   M: M,
   fact: fact$1
 };

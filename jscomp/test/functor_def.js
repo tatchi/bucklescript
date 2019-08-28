@@ -18,7 +18,7 @@ function Make(U) {
     console.log(f(x$1, x$1));
     return Curry._2(U.say, x$1, x$1);
   };
-  return {
+  return /* module */{
           h: h
         };
 }

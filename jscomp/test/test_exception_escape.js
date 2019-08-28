@@ -16,7 +16,7 @@ catch (exn){
   f = 3;
 }
 
-var N = {
+var N = /* module */{
   f: f
 };
 

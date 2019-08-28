@@ -97,7 +97,7 @@ function f10(x) {
 
 var f11 = false;
 
-var Test_null = {
+var Test_null = /* module */{
   f1: f1,
   f2: f2,
   f5: f5,
@@ -182,7 +182,7 @@ function f10$1(x) {
 
 var f11$1 = false;
 
-var Test_def = {
+var Test_def = /* module */{
   f1: f1$1,
   f2: f2$1,
   f5: f5$1,
@@ -265,7 +265,7 @@ function f10$2(x) {
 
 var f11$2 = false;
 
-var Test_null_def = {
+var Test_null_def = /* module */{
   f1: f1$2,
   f2: f2$2,
   f5: f5$2,

@@ -31,26 +31,26 @@ function a4(x, y) {
   return a3(x, y) + 1 | 0;
 }
 
-var A4 = {
+var A4 = /* module */{
   a4: a4
 };
 
-var A3 = {
+var A3 = /* module */{
   a3: a3,
   A4: A4
 };
 
-var A2 = {
+var A2 = /* module */{
   a2: a2,
   A3: A3
 };
 
-var A1 = {
+var A1 = /* module */{
   a1: a1,
   A2: A2
 };
 
-var A0 = {
+var A0 = /* module */{
   a0: a0,
   A1: A1
 };

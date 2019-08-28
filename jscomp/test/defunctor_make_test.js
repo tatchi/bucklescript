@@ -9,12 +9,12 @@ function getcompare(x) {
 
 function Make(M) {
   var compare = M.compare;
-  return {
+  return /* module */{
           compare: compare
         };
 }
 
-var Comparable = {
+var Comparable = /* module */{
   getcompare: getcompare,
   Make: Make
 };
@@ -129,41 +129,41 @@ function add(x, data, compare, param) {
 }
 
 function add$1(x, data, v) {
-  var X = v[/* compare */0];
-  return /* record */[
-          /* compare */v[/* compare */0],
-          /* data */add(x, data, X.compare, v[/* data */1])
-        ];
+  var X = v.compare;
+  return /* record */{
+          compare: v.compare,
+          data: add(x, data, X.compare, v.data)
+        };
 }
 
 function empty(v) {
-  return /* record */[
-          /* compare */v,
-          /* data : Empty */0
-        ];
+  return /* record */{
+          compare: v,
+          data: /* Empty */0
+        };
 }
 
 var compare = Caml_primitive.caml_int_compare;
 
-var V0 = {
+var V0 = /* module */{
   compare: compare
 };
 
 var compare$1 = Caml_primitive.caml_int_compare;
 
-var V1 = {
+var V1 = /* module */{
   compare: compare$1
 };
 
-var v0 = /* record */[
-  /* compare */V0,
-  /* data : Empty */0
-];
+var v0 = /* record */{
+  compare: V0,
+  data: /* Empty */0
+};
 
-var v1 = /* record */[
-  /* compare */V1,
-  /* data : Empty */0
-];
+var v1 = /* record */{
+  compare: V1,
+  data: /* Empty */0
+};
 
 var v3 = add$1(3, "a", v0);
 

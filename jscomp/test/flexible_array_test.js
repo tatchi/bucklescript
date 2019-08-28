@@ -281,7 +281,7 @@ function of_array(arr) {
 
 var equal = Caml_obj.caml_equal;
 
-var Int_array = {
+var Int_array = /* module */{
   empty: empty,
   get: get,
   set: set,

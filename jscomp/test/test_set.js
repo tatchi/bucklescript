@@ -720,7 +720,7 @@ function Make(Ord) {
       return /* Empty */0;
     }
   };
-  return {
+  return /* module */{
           height: height,
           create: create,
           bal: bal,
@@ -763,7 +763,7 @@ function Make(Ord) {
         };
 }
 
-var N = {
+var N = /* module */{
   a: 3
 };
 

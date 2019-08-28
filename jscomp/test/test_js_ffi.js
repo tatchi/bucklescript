@@ -3,7 +3,7 @@
 var $$String = require("../../lib/js/string.js");
 
 function v(u) {
-  t({
+  t(/* module */{
         compare: $$String.compare
       });
   return /* () */0;
@@ -13,7 +13,7 @@ function u(v) {
   return v;
 }
 
-var s = {
+var s = /* module */{
   make: $$String.make,
   init: $$String.init,
   copy: $$String.copy,

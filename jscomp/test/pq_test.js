@@ -81,7 +81,7 @@ function extract(queue) {
   }
 }
 
-var PrioQueue = {
+var PrioQueue = /* module */{
   empty: /* Empty */0,
   insert: insert,
   Queue_is_empty: Queue_is_empty,

@@ -14,7 +14,7 @@ var Point = Caml_module.init_mod([
 Caml_module.update_mod([[[
           0,
           "add"
-        ]]], Point, {
+        ]]], Point, /* module */{
       add: (function (prim, prim$1) {
           return prim.add(prim$1);
         })

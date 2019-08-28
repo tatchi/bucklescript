@@ -6,7 +6,7 @@ var v = Caml_utils.repeat(100, "x");
 
 function M(U) {
   var v = U.f(100, "x");
-  return {
+  return /* module */{
           v: v
         };
 }

@@ -53,7 +53,7 @@ function equal(x, y) {
   return x === y;
 }
 
-var Int_hash = Hashtbl.Make({
+var Int_hash = Hashtbl.Make(/* module */{
       equal: equal,
       hash: hash
     });

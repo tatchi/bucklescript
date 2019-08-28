@@ -2,12 +2,12 @@
 
 
 function Make($star) {
-  return { };
+  return /* module */{ };
 }
 
-var U = { };
+var U = /* module */{ };
 
-var V = { };
+var V = /* module */{ };
 
 exports.Make = Make;
 exports.U = U;

@@ -32,7 +32,7 @@ function Make(U) {
   v[0] = v[0] + 1 | 0;
   v[0] = v[0] + 1 | 0;
   v[0] = v[0] + 1 | 0;
-  return {
+  return /* module */{
           length: U.length,
           hd: U.hd,
           tl: U.tl,
@@ -87,7 +87,7 @@ function f(param) {
   v[0] = v[0] + 1 | 0;
   v[0] = v[0] + 1 | 0;
   v[0] = v[0] + 1 | 0;
-  return {
+  return /* module */{
           length: List.length,
           hd: List.hd,
           tl: List.tl,
@@ -167,7 +167,7 @@ v[0] = v[0] + 1 | 0;
 
 v[0] = v[0] + 1 | 0;
 
-var H = {
+var H = /* module */{
   length: List.length,
   hd: List.hd,
   tl: List.tl,
@@ -236,7 +236,7 @@ function xx(param) {
   v[0] = v[0] + 1 | 0;
   v[0] = v[0] + 1 | 0;
   v[0] = v[0] + 1 | 0;
-  return {
+  return /* module */{
           length: List.length,
           hd: List.hd,
           tl: List.tl,

@@ -6,7 +6,7 @@ function Make(S) {
   var opt_get = function (f, i) {
     return Caml_option.undefined_to_opt(f[i]);
   };
-  return {
+  return /* module */{
           opt_get: opt_get
         };
 }
@@ -15,7 +15,7 @@ function opt_get(f, i) {
   return Caml_option.undefined_to_opt(f[i]);
 }
 
-var Int_arr = {
+var Int_arr = /* module */{
   opt_get: opt_get
 };
 
